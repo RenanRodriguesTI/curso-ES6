@@ -1,3 +1,4 @@
+import { loadavg } from "os";
 
 
 class Lista{
@@ -71,12 +72,19 @@ const arracomp = [...arr1,...arr2];
 console.log(arracomp);
 
 
+const minhaPromisse = ()=> new Promise((res,rej) => setTimeout(()=>console.log("Ok Promisse resolved"),2000));
+
+async function load(){
+   await minhaPromisse();
+}
+
+import  Api from './api';
+import App from './app';
 document.addEventListener("DOMContentLoaded", () =>{
     // let container = new Container();
     // container.addData();
     // container.listar();
+    let app = new App();
 
-    console.log(arrmap)
-
-    console.log(arr.map((item) => ({'number':item})));
+    // Api.getUserInfo("RenanRodriguesTI");
 });
