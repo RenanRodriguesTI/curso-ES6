@@ -1,3 +1,5 @@
+
+
 class Lista{
     constructor(){
         this.data =[];
@@ -66,7 +68,8 @@ console.log(`${nome} ${idade} ${u}`)
 const arr1 =[1,3,5,7];
 const arr2 = [2,4,6];
 const arracomp = [...arr1,...arr2];
-console.log(arracomp)
+console.log(arracomp);
+
 
 document.addEventListener("DOMContentLoaded", () =>{
     // let container = new Container();
